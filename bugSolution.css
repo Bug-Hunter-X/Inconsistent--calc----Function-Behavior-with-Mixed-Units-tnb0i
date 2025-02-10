@@ -1,0 +1,19 @@
+To resolve this issue, it's best to avoid mixing percentage and pixel units within the `calc()` function. A more robust approach uses a consistent unit, thereby ensuring predictable results across different browsers. If possible, either use only percentage units or only pixel units in the calculation.
+
+Here's an example using only percentage units:
+
+```css
+.element {
+  width: calc(50% + 5%);
+}
+```
+
+Or, using only pixel units:
+
+```css
+.element {
+  width: calc(500px + 10px);
+}
+```
+
+This avoids potential inconsistencies caused by browser-specific interpretations of mixed unit calculations.
