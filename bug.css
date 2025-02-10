@@ -1,0 +1,9 @@
+The following CSS code snippet demonstrates an issue with unexpected behavior in certain browsers, where the `calc()` function interacts unexpectedly with units of different types:
+
+```css
+.element {
+  width: calc(50% + 10px);
+}
+```
+
+In some browsers, this may not render as expected, especially if the parent container is smaller than the result of the calculation.  The calculation might not correctly convert the percentage and pixel values resulting in unexpected width.
